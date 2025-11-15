@@ -1,9 +1,10 @@
-import unittest
-from calculator import *
-
 #https://github.com/sv6196/lab11-SV-DY.git
 #Partner 1: Sean Vong
 #Partner 2: Daniel Yoffe
+
+import unittest
+from calculator import *
+
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
