@@ -30,8 +30,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(3, 3), 1)
-        self.assertEqual(div(10, 5), 2)
-        self.assertEqual(div(49, 7), 7)
+        self.assertEqual(div(5, 10), 2)
+        self.assertEqual(div(7, 49), 7)
 
     # def test_divide(self): # 3 assertions
     #     fill in code
@@ -43,9 +43,9 @@ class TestCalculator(unittest.TestCase):
             div(0, 5)
 
     def test_logarithm(self):  # 3 assertions
-        self.assertAlmostEqual(logarithm(2, 8), 3)
-        self.assertAlmostEqual(logarithm(10, 100), 2)
-        self.assertAlmostEqual(logarithm(math.e, math.e ** 2), 2)
+        self.assertAlmostEqual(logarithm(8, 2), 3)
+        self.assertAlmostEqual(logarithm(100, 10), 2)
+        self.assertAlmostEqual(logarithm(math.e ** 2, math.e), 2)
 
     def test_log_invalid_base(self):  # 1 assertion
         with self.assertRaises(ValueError):
@@ -58,9 +58,9 @@ class TestCalculator(unittest.TestCase):
             logarithm(math.e, 0)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertAlmostEqual(hypotenuse( 8,6), 10)
-        self.assertAlmostEqual(hypotenuse( 3,4), 16)
-        self.assertAlmostEqual(hypotenuse( 5,12), 13)
+        self.assertAlmostEqual(hypotenuse( 8,6), 10.0)
+        self.assertAlmostEqual(hypotenuse( 3,4), 5.0)
+        self.assertAlmostEqual(hypotenuse( 5,12), 13.0)
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
